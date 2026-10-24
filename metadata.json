@@ -1,0 +1,6 @@
+{
+  "name": "NitroWave - Outrun Neon Arcade",
+  "description": "Retro-futuristic 1980s synthwave arcade racing & stunt simulator with playable 3D tracks, stunt jumps, vehicle customization, and neon leaderboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,214 @@
+---
+name: Outrun Neon Arcade
+colors:
+  surface: '#190c2d'
+  surface-dim: '#190c2d'
+  surface-bright: '#403355'
+  surface-container-lowest: '#140727'
+  surface-container-low: '#211536'
+  surface-container: '#26193a'
+  surface-container-high: '#302445'
+  surface-container-highest: '#3c2e50'
+  on-surface: '#ecdcff'
+  on-surface-variant: '#e5bcc5'
+  inverse-surface: '#ecdcff'
+  inverse-on-surface: '#372a4c'
+  outline: '#ac878f'
+  outline-variant: '#5c3f46'
+  surface-tint: '#ffb1c4'
+  primary: '#ffb1c4'
+  on-primary: '#65002e'
+  primary-container: '#ff4a8d'
+  on-primary-container: '#590028'
+  inverse-primary: '#ba005b'
+  secondary: '#d3fbff'
+  on-secondary: '#00363a'
+  secondary-container: '#00eefc'
+  on-secondary-container: '#00686f'
+  tertiary: '#dec800'
+  on-tertiary: '#373100'
+  tertiary-container: '#bfac00'
+  on-tertiary-container: '#484000'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#ffd9e1'
+  primary-fixed-dim: '#ffb1c4'
+  on-primary-fixed: '#3f001a'
+  on-primary-fixed-variant: '#8f0044'
+  secondary-fixed: '#7df4ff'
+  secondary-fixed-dim: '#00dbe9'
+  on-secondary-fixed: '#002022'
+  on-secondary-fixed-variant: '#004f54'
+  tertiary-fixed: '#fde400'
+  tertiary-fixed-dim: '#dec800'
+  on-tertiary-fixed: '#201c00'
+  on-tertiary-fixed-variant: '#504700'
+  background: '#190c2d'
+  on-background: '#ecdcff'
+  surface-variant: '#3c2e50'
+typography:
+  headline-xl:
+    fontFamily: Syne
+    fontSize: 40px
+    fontWeight: '800'
+    lineHeight: 44px
+    letterSpacing: 0.04em
+  headline-xl-mobile:
+    fontFamily: Syne
+    fontSize: 30px
+    fontWeight: '800'
+    lineHeight: 34px
+    letterSpacing: 0.04em
+  headline-lg:
+    fontFamily: Syne
+    fontSize: 32px
+    fontWeight: '800'
+    lineHeight: 36px
+    letterSpacing: 0.03em
+  headline-lg-mobile:
+    fontFamily: Syne
+    fontSize: 24px
+    fontWeight: '800'
+    lineHeight: 28px
+    letterSpacing: 0.03em
+  headline-md:
+    fontFamily: Syne
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 26px
+    letterSpacing: 0.02em
+  body-lg:
+    fontFamily: Space Grotesk
+    fontSize: 16px
+    fontWeight: '500'
+    lineHeight: 22px
+  body-md:
+    fontFamily: Space Grotesk
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Space Grotesk
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 14px
+    fontWeight: '700'
+    lineHeight: 18px
+    letterSpacing: 0.06em
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 9px
+    fontWeight: '700'
+    lineHeight: 12px
+    letterSpacing: 0.1em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-mobile: 0.75rem
+  margin: 1.5rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+The design system establishes a high-octane, retro-futuristic arcade aesthetic rooted in 1980s synthwave, outrun car culture, and cabinet coin-op nostalgia. It is tailored for high-energy mobile racing and stunt gameplay, invoking sensations of midnight velocity, CRT raster monitors, and electric neon boulevards.
+
+### Design Movement & Aesthetic
+- **Retro-Futurism / Synthwave Arcade:** The interface fuses hyper-saturated neon glows with midnight abyss backdrops. Key visual motifs include isometric wireframe perspective grids, chrome specular highlights, scanline overlays, and dynamic speed-slanted panels.
+- **Tactile Cabinet Hardware:** Buttons evoke mechanical coin-op chassis with layered, gradient-beveled borders and inner light strikes. Interactive states pulse with electric energy rather than standard flat fills.
+- **Emotional Target:** Adrenaline, speed, nostalgia, and arcade precision.
+
+## Colors
+The palette is built strictly for dark-mode display, creating sharp visual punch through intense luminescent accents over deep midnight purple and void-like navy.
+
+### Core Swatches
+- **Primary (`#FF007F` - Hot Magenta):** Critical driver interactions, nitro meters, primary CTA buttons, record-breaking callouts, and outer neon glow signatures.
+- **Secondary (`#00F0FF` - Electric Cyan):** Stunt multipliers, vehicle tech readouts, shields, secondary CTAs, and digital speedometers.
+- **Tertiary (`#FFE600` - Sunset Neon Yellow):** Coin balances, high-score alerts, hazard zones, and turbo overdrive indicators. Can shift toward fiery orange (`#FF7700`) in gradients.
+- **Neutral Surface Base (`#0D0221` / `#120526` - Midnight Void):** Deep chromatic canvas tones that eliminate screen glare while making neon glow layers pop.
+
+### Color Application Rules
+- **No pure neutral grays:** All structural fills must pull from the midnight purple spectrum (`#1A0B36`, `#25144A`).
+- **Gradients:** Use directional linear angles (typically 135deg or 180deg) blending `#FF007F` to `#FF7700` (Sunset Nitro) or `#00F0FF` to `#7928CA` (Hyperdrive).
+
+## Typography
+Typography channels arcade velocity, pairing the heavy, aggressive architecture of Syne for headers with the clean tech-forward legibility of Space Grotesk and monospaced telemetry via JetBrains Mono.
+
+### Hierarchy & Style Treatments
+- **Headers (Syne):** Displayed in uppercase. For primary tournament screens and race win titles, apply a 6° forward skew (`transform: skewX(-6deg)`) to reinforce kinetic momentum.
+- **Data & Telemetry (JetBrains Mono):** Numbers, lap timers, drift points, and tachometer feeds utilize monospace fonts to prevent layout jittering during high-speed number ticking.
+- **Text Shadows:** Headlines feature subtle double-drop neon text glows (`0 0 8px rgba(255, 0, 127, 0.6), 0 0 20px rgba(255, 0, 127, 0.3)`).
+
+## Layout & Spacing
+The layout system accounts for touch-first thumb zones across portrait garage/loadout menus and landscape in-race HUD telemetry.
+
+### Screen Adaptation & Grids
+- **Portrait Views (Upgrades, Gacha, Leaderboards):** Structured on a flexible 4-column layout on mobile, expanding to 8 columns on tablet. Margins are kept compact (`1rem` on mobile) to preserve maximum screen real estate for 3D car hero views.
+- **Landscape Views (Race HUD):** Anchored by perimeter safe zones. Critical inputs (Steer, Nitro, E-Brake) cluster in the bottom 25% corner arcs, while HUD elements (Mini-map, Speedometer, Stunt Chain) float along the top and upper lateral margins.
+- **Rhythm:** Spacing follows a strict 4px base multiplier, favoring dense, arcade-style packing for telemetry modules and generous air around 3D vehicle canvas viewports.
+
+## Elevation & Depth
+Elevation is rendered through luminous radiance, chromatic stacking, and glassmorphic translucency rather than daylight drop shadows.
+
+### Atmospheric Depth Model
+- **Level 0 (Backdrop Void):** Solid dark navy-purple (`#0D0221`) layered with an infinite perspective wireframe grid moving toward a vanishing horizon line. A subtle CRT raster scanline CSS pattern overlays this level.
+- **Level 1 (Sub-Panels & Data HUDs):** Deep glassmorphism. Background fills use `rgba(26, 11, 54, 0.65)` with a `backdrop-filter: blur(12px)` and a 1px border of `rgba(0, 240, 255, 0.25)`.
+- **Level 2 (Active Cards & Overlays):** Richer purple containers with vivid neon perimeter borders (`#FF007F` or `#00F0FF`) generating diffuse ambient box glows (`0 0 16px rgba(255, 0, 127, 0.35)`).
+- **Level 3 (Modal Alerts & Interactive Nodes):** Metallic chrome highlights on top edges (`linear-gradient(180deg, #FFFFFF 0%, rgba(255,255,255,0) 100%)`) with dual-color drop shadows (cyan floor reflection + magenta top rim).
+
+## Shapes
+The shape grammar embodies late-80s arcade hardware: sharp, aerodynamic, and industrial. Pure pill shapes and large bubbly radii are prohibited.
+
+### Geometry Details
+- **Base Geometry:** Standard elements use compact, crisp corners (`0.25rem` / `4px`).
+- **Chamfered / Angled Edges:** High-priority cards, modal dialogs, and primary action buttons utilize a `clip-path` 45° corner cut (chamfer of 8px to 12px) on alternating diagonal corners (top-right and bottom-left) to simulate armored chassis panels.
+- **Slanted Containers:** Section badges and speed indicators employ an italicized parallel-polygon silhouette (`skewX(-10deg)`).
+
+## Components
+
+### Buttons & Arcade Triggers
+- **Primary Action (Start Race / Nitro):** Chamfered rectangular profile with a hot magenta-to-orange gradient fill (`linear-gradient(135deg, #FF007F, #FF7700)`). Top edge carries a 1px white specular chrome line. The button casts an outer glow of `0 0 20px rgba(255, 0, 127, 0.6)`. Text is uppercase Syne Bold, slanted -6°.
+- **Secondary (Tuning / Upgrades):** Dark purple glass surface bordered by a 1.5px neon cyan stroke (`#00F0FF`). On press, shifts to solid cyan with contrasting `#0D0221` dark text.
+- **In-Race HUD Buttons:** Circular touch triggers with thick gradient border rings, semi-transparent dark center (`rgba(13, 2, 33, 0.5)`), and centered glowing vector glyphs.
+
+### Cards & Vehicle Pods
+- Translucent midnight backing (`rgba(22, 7, 46, 0.75)`), 1px gradient stroke running from neon pink to deep indigo.
+- Header bars within cards have a horizontal scanline texture and monospaced telemetry metadata tags.
+- Outer perimeter carries a soft neon under-glow.
+
+### Chips & Filter Tags
+- Compact, angular badges with a 2px diagonal cut on the top-right corner.
+- Inactive: Bordered by muted purple-blue (`#2D1B4E`), body text in gray-cyan (`#7EE7F2`).
+- Active: Filled with electric cyan (`#00F0FF`), black label font (`#0D0221`), with a distinct cyan bloom effect.
+
+### Input Fields & Steppers
+- Dark inset wells with an inner shadow (`inset 0 2px 4px rgba(0,0,0,0.8)`) evoking recessed cabinet coin slots.
+- Active state lights up a 1px electric magenta border and flashes a blocky neon cursor.
+
+### Checkboxes & Toggles
+- **Checkboxes:** Diamond or angled-square bounding boxes. Checked state displays an electric cyan laser crosshair checkmark.
+- **Toggles:** Beveled track resembling a slider switch on an arcade console; thumb knob is a faceted neon pill that pulses yellow-orange when enabled.
+
+### Progress & Boost Gauges
+- Segmented LED meters rather than continuous smooth bars. Segments light up sequentially from neon cyan through sunset yellow to danger magenta at peak overload.

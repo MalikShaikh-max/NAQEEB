@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}*{-webkit-tap-highlight-color:transparent;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;family=Space+Grotesk:wght@400;500;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#00686f", "on-tertiary": "#373100", "primary-fixed": "#ffd9e1", "surface-container": "#26193a", "on-error": "#690005", "inverse-on-surface": "#372a4c", "secondary-container": "#00eefc", "on-tertiary-fixed-variant": "#504700", "error": "#ffb4ab", "inverse-primary": "#ba005b", "surface-dim": "#190c2d", "surface-container-highest": "#3c2e50", "on-primary-container": "#590028", "background": "#190c2d", "outline-variant": "#5c3f46", "surface-bright": "#403355", "primary-container": "#ff4a8d", "on-surface": "#ecdcff", "on-primary": "#65002e", "on-error-container": "#ffdad6", "surface-container-high": "#302445", "outline": "#ac878f", "on-surface-variant": "#e5bcc5", "surface-container-lowest": "#140727", "surface": "#190c2d", "on-secondary": "#00363a", "surface-container-low": "#211536", "tertiary-fixed-dim": "#dec800", "on-tertiary-container": "#484000", "primary": "#ffb1c4", "on-secondary-fixed-variant": "#004f54", "tertiary-fixed": "#fde400", "inverse-surface": "#ecdcff", "on-primary-fixed": "#3f001a", "surface-tint": "#ffb1c4", "on-tertiary-fixed": "#201c00", "tertiary-container": "#bfac00", "error-container": "#93000a", "secondary-fixed-dim": "#00dbe9", "on-background": "#ecdcff", "secondary": "#d3fbff", "surface-variant": "#3c2e50", "tertiary": "#dec800", "secondary-fixed": "#7df4ff", "primary-fixed-dim": "#ffb1c4", "on-secondary-fixed": "#002022", "on-primary-fixed-variant": "#8f0044" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "margin": "1.5rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg": ["Syne"], "headline-xl": ["Syne"], "headline-md": ["Syne"], "body-lg": ["Space Grotesk"], "headline-lg-mobile": ["Syne"], "label-md": ["JetBrains Mono"], "body-md": ["Space Grotesk"], "label-lg": ["JetBrains Mono"], "label-sm": ["JetBrains Mono"], "headline-xl-mobile": ["Syne"], "body-sm": ["Space Grotesk"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "36px", "letterSpacing": "0.03em", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "44px", "letterSpacing": "0.04em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "22px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "28px", "letterSpacing": "0.03em", "fontWeight": "800" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-sm": ["9px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "34px", "letterSpacing": "0.04em", "fontWeight": "800" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen relative selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><img alt="NitroWave Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Njpd1A69Xeao2G9ebM7v1c07VglFevS8QPTLcBTEf2BPhg7vmmm73Uck2tuNC49h4f0_5esl7SpOMl-mikfOcwgyB1wiXQbbFyi3-qbIY8-frJxiZEJ_4vTkpOUCH5kugIEEwMFhXAxUtWk_tB0l5NpTVJtpUExmysyYlLErXleWgV2wQVPFvX3Iton4E1U85h37Cixv8yLZWmBNOhoRemIi5jBVs2LOmRGkkZYC5ZSpWQM8Di_Y7w"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="text-primary font-headline-md text-headline-md leading-none tracking-wider uppercase truncate">NitroWave</span><span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm shadow-[0_0_8px_rgba(0,238,252,0.4)] shrink-0">LV.42</span></div><span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest truncate">Lobby</span></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high/90 shadow-[0_0_10px_rgba(0,238,252,0.2)]"><span class="material-symbols-outlined text-secondary-container text-base leading-none">diamond</span><span class="font-label-md text-label-md text-secondary">24.8K</span></div><div class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high/90 shadow-[0_0_10px_rgba(255,74,141,0.25)]"><span class="material-symbols-outlined text-primary-container text-base leading-none">local_fire_department</span><span class="font-label-md text-label-md text-primary">1,420</span></div><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-secondary-container to-primary-container shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOQueTIag2vTpBCta-ChqyaPT8zN_Fka7LmaKkehaP3diRfRK1xMW7UZMjddzk2Y1UPsr28HXST9_8wVdgo6ABLR7-k2SA4yrfGRRNqNwPwcigE8DfbGkWb5xRz_1l_n8PWBWLVsD9_VQWquRYptKBV8Z0QG7REQIRu4zUUH1Zk4y9onBwr6KaAekbxzWdsxN285AzQe4SQLDCHsGl7T0Q49NAduerJOwaqQwXi4qmIouHEI4L2RrT1A"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface bg-[linear-gradient(to_bottom,rgba(25,12,45,0.7),rgba(20,7,39,0.95)),linear-gradient(rgba(0,238,252,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,74,141,0.05)_1px,transparent_1px)] bg-[size:100%_100%,32px_32px,32px_32px]"><div class="flex flex-col w-full pb-24 space-y-space-md px-margin-mobile">
+<!-- Interactive Ambient Banner & Audio Mode Bar -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Midnight Circuit Online</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-full shadow-[0_0_12px_rgba(0,238,252,0.15)]">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span class="font-label-sm text-label-sm uppercase text-secondary">FM 84.6 SynthFM</span>
+<button class="ml-1 w-4 h-4 rounded-full bg-primary-container flex items-center justify-center text-[10px] text-on-primary" id="audio-toggle">
+<span class="material-symbols-outlined text-[11px] leading-none">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Hero Showcase: Vector GT-86 with Wireframe Horizon & Neon Vibe -->
+<section class="relative w-full rounded-xl bg-surface-container-lowest overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.8)]">
+<!-- Neon Sky & Retro Wireframe Horizon -->
+<div class="relative w-full h-72 overflow-hidden flex items-end justify-center">
+<!-- Generated Hero Car Image with Synth Aesthetic -->
+<img class="absolute inset-0 w-full h-full object-cover object-bottom filter contrast-125 brightness-95" data-alt="An iconic retro 1980s wedge-shaped sports supercar like a vintage Countach, gleaming in chrome reflections and metallic lilac paint, angled dynamically on an infinite glowing magenta perspective wireframe highway grid. The horizon features a gigantic neon synthwave wireframe sun sphere casting electric cyan and vibrant pink radiance, framed by glowing neon vector palm tree silhouettes under a starry midnight purple sky, arcade coin-op art style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7EghwWp98uBX_yvIIwpxXkvEAJXUZCKT1GAF0Q5Ki3sO2jRFownaYZJwQAj7qOsO2j4D4gLaZR1btYqglsKmyYLuNiPTQx_QyAkR5gtz2DL0EAKn9uRjDAKRncWIHAvV4KH7ihKqxlo6KOsqAdZ-Cf6FYkcB1yPmNXtotUfTU2mHMTWVsREfPnBs5l_OIuM4gZdqQf1bMHvV7tRYf819w7mqRddFJL-FYjKsweE_qN41KmPIiKgYvGQ"/>
+<!-- Scanline / Glitch Vignette Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent pointer-events-none"></div>
+<!-- Top Badges inside Hero -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between z-10 pointer-events-none">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-highest/90 backdrop-blur-md shadow-[0_0_12px_rgba(255,74,141,0.35)]">
+<span class="material-symbols-outlined text-primary-container text-sm leading-none" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+<span class="font-label-md text-label-md uppercase text-primary tracking-wider">Tier-S Stunt Rig</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high/90 backdrop-blur-md shadow-[0_0_10px_rgba(0,238,252,0.3)]">
+<span class="font-label-sm text-label-sm text-secondary-container">CHASSIS:</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">#086-OUTRUN</span>
+</div>
+</div>
+<!-- Vehicle Identity Plate -->
+<div class="relative z-10 w-full px-3 pb-3 flex flex-col items-start">
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold uppercase shadow-[0_0_10px_rgba(255,74,141,0.6)]">CUSTOM RACER</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-widest uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">hotel_class</span>
+            OVERCLOCKED +3
+          </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface uppercase tracking-wider drop-shadow-[0_0_12px_rgba(0,238,252,0.6)]">
+          VECTOR GT-86
+        </h2>
+</div>
+</div>
+<!-- Segmented Arcade Telemetry Bars -->
+<div class="p-3 bg-surface-container-low/95 backdrop-blur-sm space-y-2">
+<!-- Speed Stat -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1 w-24 shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-sm">speed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Top Speed</span>
+</div>
+<!-- Segmented LED Bar -->
+<div class="flex-1 flex gap-1 h-2 bg-surface-container-highest/60 p-0.5 rounded">
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-primary-container shadow-[0_0_6px_rgba(255,74,141,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-surface-container-highest opacity-40"></div>
+</div>
+<span class="font-label-md text-label-md text-secondary w-16 text-right font-bold">240 KM/H</span>
+</div>
+<!-- Nitro Stat -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1 w-24 shrink-0">
+<span class="material-symbols-outlined text-primary-container text-sm">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Nitro Burn</span>
+</div>
+<div class="flex-1 flex gap-1 h-2 bg-surface-container-highest/60 p-0.5 rounded">
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-primary-container shadow-[0_0_6px_rgba(255,74,141,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-primary-container shadow-[0_0_6px_rgba(255,74,141,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-surface-container-highest opacity-40"></div>
+<div class="flex-1 rounded-sm bg-surface-container-highest opacity-40"></div>
+<div class="flex-1 rounded-sm bg-surface-container-highest opacity-40"></div>
+</div>
+<span class="font-label-md text-label-md text-primary w-16 text-right font-bold">3.5 SEC</span>
+</div>
+<!-- Agility Stat -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1 w-24 shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed text-sm">airline_stops</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Stunt Agility</span>
+</div>
+<div class="flex-1 flex gap-1 h-2 bg-surface-container-highest/60 p-0.5 rounded">
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-secondary-container shadow-[0_0_6px_rgba(0,238,252,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-tertiary-fixed shadow-[0_0_6px_rgba(253,228,0,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-tertiary-fixed shadow-[0_0_6px_rgba(253,228,0,0.8)]"></div>
+<div class="flex-1 rounded-sm bg-tertiary-fixed shadow-[0_0_6px_rgba(253,228,0,0.8)]"></div>
+</div>
+<span class="font-label-md text-label-md text-tertiary w-16 text-right font-bold">GRADE A+</span>
+</div>
+</div>
+</section>
+<!-- Big Arcade Action Button (Coin-Op Cabinet Feel) -->
+<div class="relative w-full group pt-1">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container via-tertiary to-secondary-container rounded-xl blur-md opacity-75 group-hover:opacity-100 transition duration-300"></div>
+<button class="relative w-full py-4 px-6 rounded-xl bg-gradient-to-r from-primary-container via-inverse-primary to-primary-container flex items-center justify-between text-on-primary shadow-[inset_0_2px_4px_rgba(255,255,255,0.4),0_6px_20px_rgba(255,74,141,0.6)] active:scale-[0.98] transition-all" id="launch-run-btn">
+<div class="flex items-center gap-space-sm text-left">
+<div class="p-2 rounded-lg bg-surface-container-lowest/40 backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl animate-pulse">rocket_launch</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Ready for Blastoff</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile uppercase tracking-wider italic text-on-primary leading-none block -skew-x-6">START NIGHT RUN</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-container text-2xl">arrow_forward</span>
+</div>
+</button>
+</div>
+<!-- Daily Stunt Challenge Quest Banner -->
+<section class="rounded-xl p-3 bg-surface-container-high relative overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.5)]">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed font-bold">Daily Stunt Bounty</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-tertiary text-xs leading-none">monetization_on</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">+500 CREDITS</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Perform 3 Barrel Rolls on Sunset Highway</span>
+<span class="font-label-md text-label-md text-secondary-container font-bold">2 / 3</span>
+</div>
+<!-- Track Meter -->
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden flex p-0.5">
+<div class="h-full bg-gradient-to-r from-secondary-container to-tertiary rounded-full shadow-[0_0_8px_rgba(0,238,252,0.6)]" style="width: 66%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Resets in: 04h 28m</span>
+<span class="text-secondary underline cursor-pointer hover:text-white">Track on HUD</span>
+</div>
+</div>
+</section>
+<!-- Arcade Game Modes Selector Header -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container">Cartridge Select</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">Race &amp; Stunt Modes</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 MODES ACTIVE</span>
+</div>
+<!-- Game Mode Cards Vertical Flow -->
+<div class="space-y-space-sm">
+<!-- Mode 1: Neon Sprint -->
+<article class="group relative rounded-xl overflow-hidden bg-surface-container-high transition-transform duration-200 active:scale-[0.99] shadow-[0_4px_16px_rgba(0,0,0,0.4)]">
+<div class="flex h-28">
+<div class="w-1/3 relative shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic neon city circuit with glowing electric cyan boost pads, glowing neon overhead arches, and trailing light beams from futuristic high-speed racecars in synthwave style, dramatic perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFDbwS7jnNFg5AHGbeov-M0qEn-wWAWEZuQuaiJD1Y4GKj8F3sWaJYAR7FYqWaNzB4VQaesBbu7Ua3hTzw5ovR0BbR00nWGqjRmEQ_Zne3yFbc4D2NBWl8minWxHwkkKm-ActsnCC6R9OuBmTqUc7F7ZC6yGMuw1hm_zqd65cs3jJeoiGntwQG8qYjJNsGNHZ5_n8W_HbLzy90RgErSf8Qavs2mOJLFN5ZpsDoo4E4gewLTEtNIVMCUg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface-container-high"></div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-secondary font-bold">CIRCUIT</span>
+</div>
+<div class="w-2/3 p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md leading-tight text-secondary uppercase tracking-wide">Neon Sprint</h4>
+<span class="material-symbols-outlined text-secondary text-lg">play_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">
+              High-intensity city arcade loops. Hit speed pads and chained boost rings to sustain ultimate nitro state.
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-xs">group</span> 8 Drivers
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">timer</span> 2:30 Est.
+            </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Mode 2: Mega Ramp Stunt Zone -->
+<article class="group relative rounded-xl overflow-hidden bg-surface-container-high transition-transform duration-200 active:scale-[0.99] shadow-[0_4px_16px_rgba(0,0,0,0.4)]">
+<div class="flex h-28">
+<div class="w-1/3 relative shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Gigantic dizzying neon vertical mega ramp in the sky with glowing magenta loop-de-loops, floating neon stunt target rings, purple clouds, and a sleek sports car launching into a 360 barrel roll mid-air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJYiLz-8x2LTZIBw6ukk7lLIBI6LqzDqrYo2lQ8I3aFOsK7sigMNJKg8UqpuPttXH9bRAa1CWkdfKFnK0EH2lJ14eEvykJ_ZtkOdGu5xXdBtp3VAC_LrtxvOV6sLo02iGyBNIh3_ZnGff_hkNxIWHWxYdhdgQKS5USiwNKIEeHwSmzkDbrbryqsQfX7xtYAGBwvSPAmFT8JHACasHQscL3c2N_bOH1ocUEgeBe4zIyljuVWQZnBo1hVQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface-container-high"></div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold uppercase">STUNT XP</span>
+</div>
+<div class="w-2/3 p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md leading-tight text-primary uppercase tracking-wide">Mega Ramp Zone</h4>
+<span class="material-symbols-outlined text-primary text-lg">play_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">
+              High-altitude sky leaps, 360° corkscrews, loop rings, and gravity-defying freefall acrobatics.
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-xs">grade</span> 5x Multiplier
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">altitude</span> High G-Force
+            </span>
+</div>
+</div>
+</div>
+</article>
+<!-- Mode 3: Outrun Time Attack -->
+<article class="group relative rounded-xl overflow-hidden bg-surface-container-high transition-transform duration-200 active:scale-[0.99] shadow-[0_4px_16px_rgba(0,0,0,0.4)]">
+<div class="flex h-28">
+<div class="w-1/3 relative shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Endless retro coastal coastal highway stretching toward a digital synthwave sunset, dodging colorful retro 80s traffic vehicles at breakneck speed, bathed in warm orange and neon purple rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5hfQ598SHHWZV6RkawgV9FEr-P-9Q7_Lt4Twuasb6Hn1-wpKX_4wvhsVvuWUYlV5Z0qlqk4ekF2clPkFaP4AY8luFugYFtRmGTcyzKHUWsvMeaBsddivCXsdG5IOWfFjFDOVoiYvYAnuNM6wyt15Z3VeH9MSV0QhVWwlhK0jHNYJR11Pjfx4tda1vFYH3gMQOhk8drs1hDPLbqr-P2gV4SSZYECKjWE6lSnP8C_SnbeLfkwJdPc0BhQ"/>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-surface-container-high"></div>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-tertiary font-bold">SURVIVAL</span>
+</div>
+<div class="w-2/3 p-3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md leading-tight text-tertiary uppercase tracking-wide">Outrun Attack</h4>
+<span class="material-symbols-outlined text-tertiary text-lg">play_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">
+              Weave through dense coastal highway traffic before the timer strikes zero. Checkpoint extensions rewarded.
+            </p>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-error">
+<span class="material-symbols-outlined text-xs">warning</span> No Crashes
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-xs">toll</span> Ghost Chase
+            </span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Quick Garage & Tuning Quick-Deck -->
+<section class="rounded-xl p-3.5 bg-surface-container-low shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">tune</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase">Pit Stop Quick Tune</span>
+</div>
+<button class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm uppercase">Full Garage</button>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Tuning slot 1: Neon Underglow -->
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-secondary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-base">lightbulb</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface uppercase font-bold">Underglow</span>
+<span class="block font-label-sm text-label-sm text-secondary">CYAN PULSE</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+</div>
+<!-- Tuning slot 2: Twin Turbo Nitro -->
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-base">bolt</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface uppercase font-bold">Nitro Jet</span>
+<span class="block font-label-sm text-label-sm text-primary">STAGE 2 BLOW</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+</div>
+</div>
+</section>
+<!-- Live Stunt Leaderboard Mini-Strip -->
+<section class="rounded-xl p-3 bg-surface-container-high/80 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant block">Sunset Ramp Highscore</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">#1 SYNTH_VIXEN - 1,480,200 PTS</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold uppercase shadow-[0_0_8px_rgba(0,238,252,0.3)]">Top 1%</span>
+</section>
+</div>
+<script>
+  (function() {
+    const launchBtn = document.getElementById('launch-run-btn');
+    if (launchBtn) {
+      launchBtn.addEventListener('click', () => {
+        launchBtn.classList.add('scale-95');
+        setTimeout(() => {
+          launchBtn.classList.remove('scale-95');
+        }, 150);
+      });
+    }
+
+    const audioToggle = document.getElementById('audio-toggle');
+    let playing = false;
+    if (audioToggle) {
+      audioToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        playing = !playing;
+        audioToggle.innerHTML = playing 
+          ? '<span class="material-symbols-outlined text-[11px] leading-none">pause</span>' 
+          : '<span class="material-symbols-outlined text-[11px] leading-none">play_arrow</span>';
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-secondary bg-surface-container/60 shadow-[inset_0_0_12px_rgba(0,238,252,0.35)]"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-3 py-1 rounded transition-all duration-200 group text-secondary bg-surface-container/60 shadow-[inset_0_0_12px_rgba(0,238,252,0.35)]" data-path="lobby" href="#"><span class="material-symbols-outlined text-xl group-hover:text-secondary group-hover:scale-110 transition-transform">sports_score</span><span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Lobby</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-3 py-1 rounded text-on-surface-variant transition-all duration-200 group" data-path="garage" href="#"><span class="material-symbols-outlined text-xl group-hover:text-secondary group-hover:scale-110 transition-transform">build</span><span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Garage</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-3 py-1 rounded text-on-surface-variant transition-all duration-200 group" data-path="stunts" href="#"><span class="material-symbols-outlined text-xl group-hover:text-secondary group-hover:scale-110 transition-transform">emoji_events</span><span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Stunts</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-3 py-1 rounded text-on-surface-variant transition-all duration-200 group" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-xl group-hover:text-secondary group-hover:scale-110 transition-transform">military_tech</span><span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Rankings</span></a></div></nav></body></html>
